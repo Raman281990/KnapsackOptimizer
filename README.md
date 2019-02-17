@@ -1,4 +1,4 @@
-# KnapsackOptimizer
+# KnapsackOptimizer (Ramandeep kaur)
 
 This Application is used to solve Knapsack problems.
 
