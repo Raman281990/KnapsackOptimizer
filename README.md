@@ -1,7 +1,9 @@
 # KnapsackOptimizer
 
 This Application is used to solve Knapsack problems.
+
 Tasks are submitted to the system and Knapsack Optimizer solves the problem and calculates the solution.
+
 Various REST API's are exposed to submit Task,Check the Status of Task,Retrieve Solution etc.
 
 Task submitted to the system example:
@@ -37,7 +39,7 @@ This endpoint is used for retrieving all the tasks present in the Optimizer Appl
 This endpoint is used for shutting down the service.
 
 # Technologies used
-* Spring boot
+* Spring boot (Java 8)
 * Mysql -Database
 * Docker for building/running/deploying the Application
 
