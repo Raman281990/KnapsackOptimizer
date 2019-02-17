@@ -4,10 +4,10 @@
 Project structure
 KnapsackOptimizer
  .
-    ├── Dockerfile              	# Docker file for creating images
-    ├── docker-compose.yml           # commands to build run both /knapsack-optimizer and /mysql together in isolated environment
-    ├── README.md                    # Project related information here. 
-    └── mysql_Scripts                  # Mysql scripts for creating tables 
+    ├── Dockerfile              # Docker file 
+    ├── docker-compose.yml      # commands to build run both /knapsack-optimizer and /mysql together in isolated environment
+    ├── README.md               # Project related information here. 
+    └── mysql_Scripts           # Mysql scripts for creating tables 
 	
 	
 knapsack-optimizer-app -
