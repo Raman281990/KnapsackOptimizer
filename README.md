@@ -8,6 +8,18 @@ Various REST API's are exposed to submit Task,Check the Status of Task,Retrieve 
 
 Task submitted to the system example:
 {"problem": {"capacity": 15, "weights": [12,1,2,1,4], "values": [4,2,2,1,10]}}
+
+Response:
+
+{
+  "task": "T27_840",
+  "status": "submitted",
+  "timestamps": {
+    "submitted": 1550418014,
+    "started": null,
+    "completed": null
+  }
+}
 	
 knapsack-optimizer-app -
 Runs on port 6543 and context path /kanpsack supports following endpoints
