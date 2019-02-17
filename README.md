@@ -4,6 +4,8 @@ This Application is used to solve Knapsack problems.
 Tasks are submitted to the system and Knapsack Optimizer solves the problem and calculates the solution.
 Various REST API's are exposed to submit Task,Check the Status of Task,Retrieve Solution etc.
 
+Task submitted to the system example:
+{"problem": {"capacity": 15, "weights": [12,1,2,1,4], "values": [4,2,2,1,10]}}
 	
 knapsack-optimizer-app -
 Runs on port 6543 and context path /kanpsack supports following endpoints
@@ -34,6 +36,11 @@ This endpoint is used for retrieving all the tasks present in the Optimizer Appl
 
 This endpoint is used for shutting down the service.
 
+# Technologies used
+* Spring boot
+* Mysql -Database
+* Docker for building/running/deploying the Application
+
 # Instructions to run the Application
 
 1) Clone the code from Github repository: https://github.com/Raman281990/KnapsackOptimizer.git
@@ -42,7 +49,13 @@ This endpoint is used for shutting down the service.
 
     docker-compose up
 
-This will start knapsack-optimizer-app and mysql-docker-container.
+This will start two docker containers:
+
+knapsackoptimizer_knapsack-optimizer-app_1
+
+knapsackoptimizer_mysql-docker-container_1
+
+Once the Application is up and running, you can test the REST endpoints using SWAGGER or CURL command.
 
 # Open the swagger URL:
 http://localhost:6543/knapsack/swagger-ui.html
