@@ -1,15 +1,9 @@
 # KnapsackOptimizer
 
+This Application is used to solve Knapsack problems.
+Tasks are submitted to the system and Knapsack Optimizer solves the problem and calculates the solution.
+Various REST API's are exposed to submit Task,Check the Status of Task,Retrieve Solution etc.
 
-Project structure
-
-KnapsackOptimizer
- .
-    ├── Dockerfile              # Docker file 
-    ├── docker-compose.yml      # commands to build run both /knapsack-optimizer and /mysql together in isolated environment
-    ├── README.md               # Project related information here. 
-    └── mysql_Scripts           # Mysql scripts for creating tables 
-	
 	
 knapsack-optimizer-app -
 Runs on port 6543 and context path /kanpsack supports following endpoints
@@ -45,6 +39,7 @@ This endpoint is used for shutting down the service.
 1) Clone the code from Github repository: https://github.com/Raman281990/KnapsackOptimizer.git
 2) Ensure docker is running on your system
 3) from the root of the project run command:
+
     docker-compose up
 
 This will start knapsack-optimizer-app and mysql-docker-container.
