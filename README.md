@@ -1,5 +1,6 @@
 # KnapsackOptimizer
 
+
 Project structure
 KnapsackOptimizer
  .
@@ -14,7 +15,7 @@ Runs on port 6543 and context path /kanpsack supports following endpoints
 
 Following Rest endpoints are exposed:
 
-1)curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"problem": {"capacity": 15, "weights": [12,1,2,1,4], "values": [4,2,2,1,10]}}' 'http://localhost:6543/knapsack/tasks'
+1) curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"problem": {"capacity": 15, "weights": [12,1,2,1,4], "values": [4,2,2,1,10]}}' 'http://localhost:6543/knapsack/tasks'
 
 This endpoint is used for submitting the Task.
 
@@ -22,7 +23,7 @@ This endpoint is used for submitting the Task.
 
 This endpoint is used for checking the status of the task.
 
-3)curl -X GET --header 'Accept: application/json' 'http://localhost:6543/knapsack/solutions/T27_840'
+3) curl -X GET --header 'Accept: application/json' 'http://localhost:6543/knapsack/solutions/T27_840'
 
 This endpoint is used for retrieving the solution.
 
@@ -30,7 +31,7 @@ This endpoint is used for retrieving the solution.
 
 This endpoint is used for retrieving all the tasks present in the Optimizer Application.
 
-5)curl -X POST \
+5) curl -X POST \
   http://localhost:6543/knapsack/shutdown \
   -H 'authorization: Basic YWRtaW46YWRtaW4=' \
   -H 'cache-control: no-cache' \
@@ -39,6 +40,7 @@ This endpoint is used for retrieving all the tasks present in the Optimizer Appl
 This endpoint is used for shutting down the service.
 
 Steps to run the Application
+
 1) Clone the code from Github repository
 2) Ensure docker is running on your system
 3) from the root of the project run command:
