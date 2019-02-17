@@ -83,6 +83,8 @@ docker ps
 
 docker exec -it mysql_container_name mysql -uroot -p
 
+enter password : root
+
 use optimizer;
 
 show tables;
