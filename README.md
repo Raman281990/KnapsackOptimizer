@@ -60,7 +60,7 @@ This endpoint is used for shutting down the service.
 1) Clone the code from Github repository: https://github.com/Raman281990/KnapsackOptimizer.git
 2) Ensure docker is running on your system
 3) from the root of the project run command:
-
+    docker-compose build
     docker-compose up
 
 This will start two docker containers:
