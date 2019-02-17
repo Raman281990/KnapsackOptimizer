@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  mysql-docker-container:
+    image: mysql:5.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=optimizer
+      - MYSQL_USER=maersk
+      - MYSQL_PASSWORD=moonlight  
+    networks:
+      - net-backend
+    command: mysqld
+    volumes:
+      - ./mysql_Scripts:/docker-entrypoint-initdb.d
+  knapsack-optimizer-app:
+    image: knapsack-optimizer-image
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql-docker-container
+    networks:
+      - net-backend
+    ports:
+      - 6543:8080
+    volumes:
+      - /data/knapsack-optimizer-app
+      
+networks:
+  net-backend:
+  
+  
